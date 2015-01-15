@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ray's Fireworks...!</title>
+</head>
+
+<body bgcolor="" leftmargin="75" rightmargin="75">
+
+<div id="maindiv">
+	<div id="masthead"> <!--style="border-bottom:dashed #FF0066"> -->		
+		<h3 align="center">My First Django Project!</h3>
+
+		<div  id="edwin">Edwin's Blog</div>
+	</div>	
+	<div>
+	
+	<p id="welcome">Welcome to My Blog</p>
+	<!-- Very Important -->
+	{% for post in posts %}
+		<div id="myposts">
+			<h2><a href="">{{ post.title }}</a></h2>
+			<p>{{ post.text|linebreaks }}</p> <!--Prints the Text Stored AS PARAGRAPHS-->
+			<p>Published: {{ post.published_date }}</p>
+		</div>
+	{% endfor %}
+	</div>
+	
+</div>
+</body>
+</html>

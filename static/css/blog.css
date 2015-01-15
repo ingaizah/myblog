@@ -1,0 +1,43 @@
+/* CSS Document */
+
+body{
+color: #333333;
+}
+
+/****My Headings****/
+h3{
+color:#CC33FF;font-style:italic;
+}
+
+#edwin{
+color:#00FF00;
+font-style:italic;
+float:right;
+}
+
+/*******My Page Links*******/
+a {
+color:#0033FF;
+/***text-decoration:none;***/
+}
+
+a:hover{
+color:#0066FF;
+text-decoration:underline;
+text-transform:capitalize;
+font-style:italic;
+/*text-decoration:blink;*/
+}
+
+a:visited{
+color:#FF66FF;
+text-decoration:none
+}
+
+/*********My Divs*********/
+#masthead{
+border-bottom: 2px solid #CCCCCC;
+/****background-color:#FFFFCC;***/
+background-color:#FFFFFF
+}
+
